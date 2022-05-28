@@ -8,6 +8,7 @@ function Header(props) {
         padding: "18px",
         width: "90%",
         margin: "auto",
+        marginTop: "30px",
     };
 
     return (

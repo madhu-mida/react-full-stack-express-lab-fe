@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+### My Portfolio Live link
+https://poetic-kelpie-6c62bf.netlify.app/
+
+### My Portfolio Backend GitHub Repo
+https://github.com/madhu-mida/react-full-stack-express-lab
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
