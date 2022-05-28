@@ -1,0 +1,90 @@
+// VARIABLES
+
+$maincolor: black;
+$contrastcolor: white;
+$primarycolor: #051c67;
+$gradients: () !default;
+$gradients: map-merge((
+    chill: linear-gradient(135deg, #09e485 0%,#0291e3 100%),
+    warm: linear-gradient(135deg, #F2CD48 0%,#FD803F 100%),
+    hot: linear-gradient(135deg, #F9445A 0%,#FD803F 100%),
+    cold: linear-gradient(135deg, #8019C6 0%,#2F93CC 100%)
+), $gradients);
+
+// Gradient backgrounds
+@mixin bg-gradient{
+    background-color: $gradients;
+  }
+
+body {
+    background: rgb(32,49,105);
+background: linear-gradient(90deg, rgba(32,49,105,1) 0%, rgba(5,28,103,1) 35%, rgba(71,61,227,1) 100%);
+color: $contrastcolor;
+}
+
+@mixin  white-text-black-bg {
+    color: $contrastcolor;
+    background-color: $primarycolor;
+}
+
+@mixin black-text-white-bg {
+    color: $maincolor;
+    background-color: $contrastcolor;
+}
+
+
+// -------------------------
+// Header
+// -------------------------
+
+nav {
+    @include white-text-black-bg;
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+        @include white-text-black-bg;
+
+        div {
+            margin: 10px;
+            font-size: large;
+        }
+    }
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        margin-left: 50px;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+        margin-top: 50px;
+        border-radius: 90px;
+        object-fit: cover;
+    }
+}
+
+.project-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+} 
+
+.project-buttons Button{
+    margin-top: 10px;
+    display: block;
+    font-size: 1em;
+    padding: 10px;
+    width: 100px;
+}
