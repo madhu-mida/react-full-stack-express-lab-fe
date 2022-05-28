@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { IconContext } from "react-icons";
+import { AiFillLinkedin } from 'react-icons/ai'
 
 function About(props) {
     // create state to hold about data
@@ -25,6 +27,13 @@ function About(props) {
             <h2>{about.name}</h2>
             <h4 style={{ fontStyle: "italic" }}>{about.email}</h4>
             <p>{about.bio}</p>
+            <IconContext.Provider value={{ color: "white", size: '1.5em' }}>
+                <div>
+                    <a href="https://www.linkedin.com/in/madhumida-sanjeeviraj/" target="_blank"><AiFillLinkedin /></a>
+
+                </div>
+            </IconContext.Provider>
+
         </div>
     );
 
